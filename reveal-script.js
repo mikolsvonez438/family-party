@@ -1,7 +1,7 @@
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
 
-const SUPABASE_URL = "https://YOUR-PROJECT.supabase.co"; // <-- replace
-const SUPABASE_ANON_KEY = "YOUR_ANON_KEY"; // <-- replace
+const SUPABASE_URL = "https://iaromyesegaucguvwohn.supabase.co"; // <-- replace
+const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imlhcm9teWVzZWdhdWNndXZ3b2huIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjMzMjM2MjUsImV4cCI6MjA3ODg5OTYyNX0.tZx5CwngEY2K81ugUQFQ-KqOfiB8f6sFraIUFTQltyQ"; // <-- replace
 const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 const familyEl = document.getElementById('family');
