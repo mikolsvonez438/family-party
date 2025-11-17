@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <title>Secret Exchange — Reveal</title>
@@ -8,11 +8,25 @@
 </head>
 <body>
   <div class="app">
-    <header><h1>Reveal Your Secret Santa</h1><p class="subtitle">Enter Family Code and your PIN to reveal your assigned person.</p></header>
+    <header>
+      <h1>Reveal Your Secret Santa</h1>
+      <p class="subtitle">
+        Enter your Family Code and PIN to see who you will be gifting.
+      </p>
+    </header>
+
     <main>
+      <section class="card event-details">
+        <h2>Event Details 🎁</h2>
+        <p><strong>Worth:</strong> ₱300</p>
+        <p><strong>Place:</strong> Harbour Seafront</p>
+        <p><strong>Date:</strong> Dec 21, 2025</p>
+      </section>
+
       <section class="card">
+        <h2>Reveal Your Assignment</h2>
         <input id="family" placeholder="Family Code" />
-        <input id="pin" placeholder="Your PIN" />
+        <input id="pin" placeholder="Your PIN" type="password" />
         <div style="margin-top:8px;">
           <button id="revealBtn" class="btn primary">Reveal My Person</button>
         </div>
@@ -21,6 +35,7 @@
       </section>
     </main>
   </div>
+
   <script type="module" src="reveal-script.js"></script>
 </body>
 </html>
