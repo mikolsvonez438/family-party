@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Secret Exchange — Register</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header><h1>Join Secret Exchange</h1><p class="subtitle">Enter name, wish, family code, and choose a PIN (keep secret).</p></header>
+
+    <main>
+      <section class="card">
+        <h2>Your Details</h2>
+        <input id="name" placeholder="Your name" />
+        <input id="wish" placeholder="Wish list / hints (optional)" />
+        <input id="familyCode" placeholder="Family Code (given by host)" />
+        <input id="userCode" placeholder="Your PIN (keep secret)" />
+        <div style="margin-top:10px;">
+          <button id="saveProfileBtn" class="btn accent">Save / Register</button>
+        </div>
+        <p id="profileMsg" class="muted small"></p>
+      </section>
+    </main>
+  </div>
+
+  <script type="module" src="register-script.js"></script>
+</body>
+</html>

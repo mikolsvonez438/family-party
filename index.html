@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Secret Exchange Gift</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Secret Exchange Gift 🎁</h1>
+      <p class="subtitle">
+        Select your name and secretly see who you will give a gift to.
+      </p>
+    </header>
+
+    <main>
+      <!-- Event Info -->
+      <section class="card">
+        <h2>Event Details</h2>
+        <div class="event-summary">
+          <p><strong>Event:</strong> <span id="summaryName">—</span></p>
+          <p><strong>Date:</strong> <span id="summaryDate">—</span></p>
+          <p><strong>Budget:</strong> <span id="summaryBudget">—</span></p>
+        </div>
+        <p class="hint">
+          The host set up the names and wish lists using Supabase.
+        </p>
+      </section>
+
+      <!-- Secret Reveal -->
+      <section class="card">
+        <h2>Your Secret Person</h2>
+        <p class="muted small">
+          One at a time: select your name, reveal, remember it, then clear the screen.
+        </p>
+
+        <div class="reveal-controls">
+          <select id="participantSelect">
+            <option value="">-- Select your name --</option>
+          </select>
+          <button id="revealBtn" class="btn primary" type="button">
+            Reveal My Person
+          </button>
+        </div>
+
+        <div id="myResult" class="pair-card hidden"></div>
+
+        <button id="clearResultBtn" class="btn ghost" type="button">
+          Clear From Screen
+        </button>
+
+        <p class="muted small" id="statusMsg"></p>
+      </section>
+
+      <!-- Host area (simple admin control) -->
+      <section class="card admin-card">
+        <h2>Host Tools (Optional)</h2>
+        <p class="muted small">
+          Host only: generate/reset random unique assignments based on the current
+          participants in Supabase.
+        </p>
+        <div class="admin-controls">
+          <input type="password" id="adminCode" placeholder="Host code" />
+          <button id="generateBtn" class="btn accent" type="button">
+            Generate / Reset Assignments
+          </button>
+        </div>
+        <p class="muted tiny">
+          Note: For security, you should manage writes via Supabase policies or run pairing
+          from an admin script. This inline host code is just for convenience.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Secret exchange gift helper ✨</p>
+    </footer>
+  </div>
+
+  <script type="module" src="./script.js"></script>
+</body>
+</html>
