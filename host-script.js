@@ -1,4 +1,4 @@
-const HOST_ENDPOINT = "https://YOUR-SERVERLESS-URL.vercel.app/generate"; // <-- replace
+const HOST_ENDPOINT = "https://family-party-api.vercel.app/api/generate"; // <-- replace
 const hostCodeInput = document.getElementById('hostCode');
 const familyInput = document.getElementById('familyCode');
 const generateBtn = document.getElementById('generateBtn');
