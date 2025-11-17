@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Secret Exchange — Host</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header><h1>Secret Exchange — Host Tools 🎁</h1><p class="subtitle">Generate assignments for a family code.</p></header>
+    <main>
+      <section class="card admin-card">
+        <h2>Host Controls</h2>
+        <p class="muted small">Enter your host code and family code, then click Generate.</p>
+        <div class="admin-controls">
+          <input type="password" id="hostCode" placeholder="Host code" />
+          <input id="familyCode" placeholder="Family Code" />
+          <button id="generateBtn" class="btn accent">Generate Assignments</button>
+        </div>
+        <p id="hostStatus" class="muted small" style="margin-top:10px"></p>
+      </section>
+    </main>
+  </div>
+  <script type="module" src="host-script.js"></script>
+</body>
+</html>
